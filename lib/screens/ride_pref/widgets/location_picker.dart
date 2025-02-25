@@ -71,7 +71,7 @@ class _LocationPickerScreenState extends State<LocationPickerScreen> {
                 child: TextField(
                   controller: _searchController,
                   decoration: InputDecoration(
-                    hintText: 'Station Road or The Bridge Cafe',
+                    hintText: 'Station Roads or The Bridge Cafe',
                     hintStyle: BlaTextStyles.body.copyWith(
                       color: BlaColors.neutralLight,
                     ),

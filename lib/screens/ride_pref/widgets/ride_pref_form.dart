@@ -116,7 +116,8 @@ class _RidePrefFormState extends State<RidePrefForm> {
     } else {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
-          content: Text('Please select both departure and arrival locations'),
+          content:
+              Text('Please select both your departure and arrival locations'),
           backgroundColor: Colors.red,
         ),
       );
@@ -135,9 +136,7 @@ class _RidePrefFormState extends State<RidePrefForm> {
     });
   }
 
-  // ----------------------------------
   // Build the widgets
-  // ----------------------------------
   @override
   Widget build(BuildContext context) {
     return Container(

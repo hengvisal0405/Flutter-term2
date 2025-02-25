@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:my_app/theme/theme.dart';
 import 'package:my_app/widgets/actions/bla_button.dart';
 
-
 class TestScreen extends StatelessWidget {
   const TestScreen({super.key});
 
@@ -24,7 +23,7 @@ class TestScreen extends StatelessWidget {
               ),
               const SizedBox(height: 20),
               BlaButton(
-                label: 'Request to book',
+                label: 'Request to books',
                 style: BlaButtonStyle.filled,
                 icon: const Icon(Icons.calendar_month_outlined),
                 onPressed: () {},

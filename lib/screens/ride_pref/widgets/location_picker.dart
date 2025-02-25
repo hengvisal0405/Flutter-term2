@@ -108,7 +108,7 @@ class _LocationPickerScreenState extends State<LocationPickerScreen> {
               child: Padding(
                 padding: const EdgeInsets.all(16.0),
                 child: Text(
-                  'Type a city name',
+                  'Type a name of city',
                   style: TextStyle(
                     color: BlaColors.neutralLight,
                     fontSize: 16,

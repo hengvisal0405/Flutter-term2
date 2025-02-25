@@ -23,6 +23,8 @@ class BlaButton extends StatelessWidget {
   /// Optional leading icon
   final Widget? icon;
 
+  final OutlinedBorder? shape;
+
   /// Creates a BlaButton with the specified properties.
   ///
   /// The [label] parameter is required.
@@ -36,6 +38,9 @@ class BlaButton extends StatelessWidget {
     this.onPressed,
     this.style = BlaButtonStyle.filled,
     this.icon,
+    this.shape = const RoundedRectangleBorder(
+      borderRadius: BorderRadius.all(Radius.circular(BlaSpacings.radiusLarge)),
+    ),
   });
 
   @override
@@ -55,9 +60,7 @@ class BlaButton extends StatelessWidget {
           vertical: BlaSpacings.m,
           horizontal: BlaSpacings.xxl,
         ),
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(BlaSpacings.radiusLarge),
-        ),
+        shape: shape,
         side: isFilled ? null : BorderSide(color: BlaColors.primary),
       ),
       child: Row(

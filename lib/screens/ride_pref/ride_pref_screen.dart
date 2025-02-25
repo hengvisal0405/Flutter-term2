@@ -38,7 +38,7 @@ class _RidePrefScreenState extends State<RidePrefScreen> {
           children: [
             SizedBox(height: 16),
             Text(
-              "Your pick of rides at low price",
+              "Your pick of ride at low price",
               style: BlaTextStyles.heading.copyWith(color: Colors.white),
             ),
             SizedBox(height: 100),

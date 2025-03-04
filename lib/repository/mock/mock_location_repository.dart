@@ -13,6 +13,7 @@ class MockLocationsRepository implements LocationsRepository {
       Location(name: 'Battambang', country: Country.cambodia),
       Location(name: 'Sihanoukville', country: Country.cambodia),
       Location(name: 'Kampot', country: Country.cambodia),
+      Location(name: 'Pailin', country: Country.cambodia),
     ];
   }
 }

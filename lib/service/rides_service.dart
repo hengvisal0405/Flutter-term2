@@ -22,9 +22,6 @@ class RidesService {
   }
   List<Ride> getRides(RidePref preference, RidesFilter? filter,{RideSortType? sortType}) 
   {
-    if (_repository == null) {
-      throw Exception('RidesService not initialized with repository yet !!!');
-    }
     List<Ride> rides = _repository!.getRides(preference, filter);
     if (sortType != null) {
       switch (sortType) {

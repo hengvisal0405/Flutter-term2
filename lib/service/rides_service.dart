@@ -6,31 +6,24 @@ enum RideSortType {
   departureTime,
   price,
 }
-
 class RidesFilter {
   final bool petAccepted;
-  
   RidesFilter({this.petAccepted = false});
 }
-
 class RidesService {
   static final RidesService _instance = RidesService._internal();
   RidesRepository? _repository;
   RidesService._internal();
-  
-
   factory RidesService() {
     return _instance;
   }
-  
-
   void initialize(RidesRepository repository) {
     _repository = repository;
   }
   List<Ride> getRides(RidePref preference, RidesFilter? filter,{RideSortType? sortType}) 
   {
     if (_repository == null) {
-      throw Exception('RidesService not initialized with repository');
+      throw Exception('RidesService not initialized with repository yet !!!');
     }
     List<Ride> rides = _repository!.getRides(preference, filter);
     if (sortType != null) {

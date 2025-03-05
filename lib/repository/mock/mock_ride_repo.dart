@@ -39,7 +39,7 @@ class MockRidesRepository implements RidesRepository {
       departureDate: DateTime.now().copyWith(hour: 5, minute: 30),
       arrivalDateTime: DateTime.now().copyWith(hour: 5, minute: 30).add(const Duration(hours: 2)),
       driver: User(
-        firstName: 'Sysysyrh',
+        firstName: 'Kanika',
         lastName: '',
         email: '',
         phone: '',
